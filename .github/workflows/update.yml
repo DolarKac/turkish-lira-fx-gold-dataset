@@ -1,0 +1,21 @@
+# Weekly refresh of the CSVs from the public DolarKaç endpoint; commits only when data changed.
+name: update-data
+on:
+  schedule: [{ cron: '0 4 * * 1' }]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/fetch.mjs
+      - run: |
+          git diff --quiet && exit 0
+          git config user.name "DolarKac bot"
+          git config user.email "info@dolarkac.com"
+          git commit -am "Veri güncellemesi $(date -u +%F)"
+          git push
