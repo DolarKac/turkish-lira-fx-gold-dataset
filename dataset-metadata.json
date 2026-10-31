@@ -1,0 +1,244 @@
+{
+  "title": "Turkish Lira FX, Gold and Bitcoin Daily Prices",
+  "subtitle": "Daily USD, EUR, GBP, gram gold, quarter gold, gold ounce and BTC prices from dolarkac.com",
+  "id": "KAGGLE_KULLANICI/dolarkac-turkish-lira-fx-gold-daily",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "keywords": [
+    "finance",
+    "economics",
+    "currencies and foreign exchange",
+    "investing",
+    "turkey"
+  ],
+  "description": "Daily OHLC prices of the Turkish lira against USD, EUR and GBP, gram gold, quarter gold coin, gold ounce and Bitcoin, compiled by DolarKaç (https://dolarkac.com). License: CC BY 4.0. Attribution required: \"Source: DolarKaç (https://dolarkac.com)\" with a link. Live data and charts: https://dolarkac.com",
+  "resources": [
+    {
+      "path": "data/usd.csv",
+      "description": "US dollar / Turkish lira (USD/TRY)",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "datetime"
+          },
+          {
+            "name": "open",
+            "type": "number"
+          },
+          {
+            "name": "high",
+            "type": "number"
+          },
+          {
+            "name": "low",
+            "type": "number"
+          },
+          {
+            "name": "close",
+            "type": "number"
+          },
+          {
+            "name": "currency",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/eur.csv",
+      "description": "Euro / Turkish lira (EUR/TRY)",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "datetime"
+          },
+          {
+            "name": "open",
+            "type": "number"
+          },
+          {
+            "name": "high",
+            "type": "number"
+          },
+          {
+            "name": "low",
+            "type": "number"
+          },
+          {
+            "name": "close",
+            "type": "number"
+          },
+          {
+            "name": "currency",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/gbp.csv",
+      "description": "British pound / Turkish lira (GBP/TRY)",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "datetime"
+          },
+          {
+            "name": "open",
+            "type": "number"
+          },
+          {
+            "name": "high",
+            "type": "number"
+          },
+          {
+            "name": "low",
+            "type": "number"
+          },
+          {
+            "name": "close",
+            "type": "number"
+          },
+          {
+            "name": "currency",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/gram.csv",
+      "description": "Gram gold (24k) in TRY",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "datetime"
+          },
+          {
+            "name": "open",
+            "type": "number"
+          },
+          {
+            "name": "high",
+            "type": "number"
+          },
+          {
+            "name": "low",
+            "type": "number"
+          },
+          {
+            "name": "close",
+            "type": "number"
+          },
+          {
+            "name": "currency",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/ceyrek.csv",
+      "description": "Quarter gold coin (çeyrek altın) in TRY",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "datetime"
+          },
+          {
+            "name": "open",
+            "type": "number"
+          },
+          {
+            "name": "high",
+            "type": "number"
+          },
+          {
+            "name": "low",
+            "type": "number"
+          },
+          {
+            "name": "close",
+            "type": "number"
+          },
+          {
+            "name": "currency",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/ons.csv",
+      "description": "Gold ounce (XAU/USD) in USD",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "datetime"
+          },
+          {
+            "name": "open",
+            "type": "number"
+          },
+          {
+            "name": "high",
+            "type": "number"
+          },
+          {
+            "name": "low",
+            "type": "number"
+          },
+          {
+            "name": "close",
+            "type": "number"
+          },
+          {
+            "name": "currency",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data/btc.csv",
+      "description": "Bitcoin / Turkish lira (BTC/TRY)",
+      "schema": {
+        "fields": [
+          {
+            "name": "date",
+            "type": "datetime"
+          },
+          {
+            "name": "open",
+            "type": "number"
+          },
+          {
+            "name": "high",
+            "type": "number"
+          },
+          {
+            "name": "low",
+            "type": "number"
+          },
+          {
+            "name": "close",
+            "type": "number"
+          },
+          {
+            "name": "currency",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}
